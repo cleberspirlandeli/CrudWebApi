@@ -11,6 +11,5 @@ namespace Usuario.Common.DTO.UsuarioContext
         public int Idade { get; set; }
         public int IdCidade { get; set; }
         public string Sexo { get; set; }
-
     }
 }

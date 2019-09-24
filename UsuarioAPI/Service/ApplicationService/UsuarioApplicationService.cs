@@ -15,7 +15,6 @@ namespace Usuario.Service.ApplicationService
 
         public UsuarioApplicationService(UsuarioUnitOfWork uow)
         {
-
             _uow = uow;
         }
 
@@ -25,13 +24,10 @@ namespace Usuario.Service.ApplicationService
 
             var dto = query.Select(x => new UsuarioDto
             {
-
                 Id = x.Id,
                 Nome = x.Nome,
                 Idade = x.Idade,
             }).FirstOrDefault();
-
-
 
             return dto;
         }
